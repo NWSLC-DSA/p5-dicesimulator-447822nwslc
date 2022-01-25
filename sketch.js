@@ -1,11 +1,55 @@
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
+}
+
+let button;
+function setup() {
+  createCanvas(100, 100);
+  background(0);
+  button = createButton('click me');
+  button.position(0, 0);
+  button.mousePressed(changeBG);
+
+
+ 
+function changeBG() {
+  let val = random(255);
+  background(val);
 }
 
 function draw() {
   background(220);
   diceValueOne(40, 20, 20);
+}
 
+function ChangeDiceNumber(){
+  console.log(random())
+  let val = random()
+  for(let DiceNumber = 1; DiceNumber < 6; i++)
+DiceNumber= random;
+  if DiceNumber = 1 do function diceValueOne;
+  Alert("ChangeDiceNumber called DiceNumber =" +DiceNumber);
+  
+   if DiceNumber = 2 do function diceValueTwo;
+  Alert("ChangeDiceNumber called DiceNumber =" +DiceNumber);
+  
+   if DiceNumber = 3 do function diceValueThree;
+  Alert("ChangeDiceNumber called DiceNumber =" +DiceNumber);
+  
+   if DiceNumber = 4 do function diceValueFour;
+  Alert("ChangeDiceNumber called DiceNumber =" +DiceNumber);
+  
+   if DiceNumber = 2 do function diceValueFive;
+  Alert("ChangeDiceNumber called DiceNumber =" +DiceNumber);
+  
+   if DiceNumber = 2 do function diceValueSix;
+  Alert("ChangeDiceNumber called DiceNumber =" +DiceNumber);
+  
+  
+  
+  
+   
 }
 
 //This is a user defined function for drawing a dice with the value one.
